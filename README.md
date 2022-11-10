@@ -1,6 +1,3 @@
-# love.html
-Code
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,7 +143,7 @@ Code
                     u.trace[0].x += u.vx;
                     u.trace[0].y += u.vy;
                     u.vx *= u.force;
-                    u.vy *= u.force;
+                    u.vy *= u.force
                     for (k = 0; k < u.trace.length - 1;) {
                         var T = u.trace[k];
                         var N = u.trace[++k];
@@ -161,14 +158,4 @@ Code
                 //ctx.fillStyle = "rgba(255,255,255,1)";
                 //for (i = u.trace.length; i--;) ctx.fillRect(targetPoints[i][0], targetPoints[i][1], 2, 2);
 
-                window.requestAnimationFrame(loop, canvas);
-            };
-            loop();
-        };
-
-        var s = document.readyState;
-        if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
-        else document.addEventListener('DOMContentLoaded', init, false);
-    </script>
-</body>
-</html>
+                window.reques
